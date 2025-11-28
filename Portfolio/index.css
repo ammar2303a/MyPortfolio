@@ -1,0 +1,386 @@
+
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+
+    a { text-decoration: none; }
+
+    /* Navbar */
+    nav {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-around; /* Logo left, links right */
+  align-items: center;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0,255,0,0.1);
+  z-index: 10;
+}
+
+nav h1 {
+  color: #39ff14;
+  font-size: 22px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: #e0e0e0;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #39ff14;
+}
+
+.social-icon {
+  margin-left: 8px; /* small gap between social icons */
+  color: #39ff14;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #fff; /* optional hover effect */
+  transform: scale(1.2);
+}
+
+   /* Hero Section - Main Container */
+.hero {
+    /* Background Color: Dominic's Dark Look */
+    min-height: 100vh;
+    background: linear-gradient(135deg,#0f0a44,#302b63,#39ff14);
+    color: #ffffff;
+    padding: 100px 5% 50px 5%;
+    display: flex;
+    justify-content: center; /* Center the entire wrapper */
+    align-items: center;
+    
+}
+
+/* Wrapper to control the width and layout like Dominic's page */
+.hero-content-wrapper {
+    width: 100%;
+    max-width: 1200px; /* Max width to keep content clean */
+    display: flex;
+    justify-content: space-between; /* Space out the image and text */
+    align-items: center;
+}
+
+/* 1. Image Styling (Center-Right Position) */
+.profile-image-container {
+    order: 2; /* Image on the right side */
+    margin-left: 50px;
+    position: relative;
+    
+}
+
+.profile-image-container img {
+    /* Size adjustment to be noticeable but not overpowering */
+    width: 350px; 
+    height: 350px;
+    border-radius: 5px; /* Square/Slightly rounded for Dominic look */
+    object-fit: cover;
+    /* Optional: Add a subtle green border/glow effect */
+    border: 3px solid #39ff14; 
+    box-shadow: 0 0 40px rgba(57, 255, 20, 0.4); 
+    transition: 0.3s;
+}
+
+
+/* 2. Text Content (Left Side) */
+.hero-text-content {
+    order: 1; /* Text on the left side */
+    max-width: 500px; /* Limit text width */
+    
+}
+
+/* Status Indicator (Dot - Neon Green) */
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #39ff14; 
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Status Label */
+.status-label {
+    display: inline-block;
+    font-size: 1rem;
+    color: #39ff14;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Main Heading - Smaller Size */
+.hero-text-content h1 {
+    font-size: 3.5rem; /* Reduced font size */
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+.hero-text-content h1 strong {
+    color: #39ff14; /* Highlight Name */
+}
+
+/* Role Title/Description - Dominic jaisa bold look */
+.role-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.role-title strong {
+    color: #39ff14; 
+}
+
+/* Short Bio/Introduction - Right side text ko yahan left side mein rakha hai */
+.bio-text {
+    margin-bottom: 40px;
+}
+.bio-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 450px;
+}
+
+/* Call to Action Button - Green background */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    background-color: #39ff14; /* Your color */
+    color: #0c0c0c; /* Dark text on button */
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #29b310; /* Darker green on hover */
+}
+
+.btn-primary .arrow {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-content-wrapper {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        text-align: center;
+    }
+
+    .profile-image-container {
+        order: 1; /* Image first */
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    
+    .profile-image-container img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-text-content {
+        order: 2; /* Text after image */
+        max-width: 100%;
+    }
+    
+    .hero-text-content h1 {
+        font-size: 2.5rem; 
+    }
+    
+    .role-title {
+        font-size: 1.3rem;
+    }
+    
+    .bio-text p {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+  
+    .btn-cv {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  color: #111;
+  background: #39ff14;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  transition: 0.3s;
+}
+
+.btn-cv:hover {
+  background: #111;
+  color: #39ff14;
+  box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;
+  transform: scale(1.05);
+}
+
+    .hero img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #39ff14;
+    }
+    .hero h1 { font-size: 48px; margin-bottom: 10px; color: #39ff14; }
+    .hero p { font-size: 20px; opacity: 0.9; }
+
+    /* Sections */
+    section { padding: 70px 40px; }
+    h2 { text-align: center; font-size: 36px; margin-bottom: 30px; color: #39ff14; }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 25px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,255,20,0.1);
+      overflow: hidden;
+      position: relative;
+      transition: 0.3s;
+      
+      
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(57,255,20,0.4);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      transition: 0.3s;
+      
+    }
+    .card img:hover {
+      filter: brightness(1.2);
+    }
+
+    /* Ribbons */
+    .ribbon {
+      position: absolute;
+      top: 10px;
+      left: -5px;
+      background: #39ff14;
+      color: #111;
+      padding: 5px 20px;
+      transform: rotate(-20deg);
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .card-content { padding: 20px; }
+    .card h3 { margin: 0; font-size: 22px; color: #39ff14; }
+    .card p { color: #ccc; margin-top: 8px; }
+
+    .card button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #39ff14;
+      color: #111;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .card button:hover {
+      background: #0f0;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    /* Contact Section */
+    .contact {
+      background: linear-gradient(135deg,#39ff14,#302b63,#0f0a44);
+      color: #e0e0e0;
+      text-align: center;
+      padding: 40px;
+    }
+    .contact p { margin: 5px 0; }
+
+    /* progressBar */
+
+      #skills {
+    background: #111;
+    color: #e0e0e0;
+    padding: 70px 40px;
+  }
+
+  #skills h2 {
+    color: #39ff14;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .skill-container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .skill span {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+
+  .progress {
+    width: 100%;
+    background: #222;
+    height: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background: #8bff76;
+    border-radius: 20px;
+    width: 0;
+    transition: width 1.2s ease-in-out;
+  }
+
+  /* Optional: Animate on scroll */
+  .skill .progress-bar.animate {
+    width: var(--width);
+  }
