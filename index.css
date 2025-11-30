@@ -453,12 +453,14 @@ nav h1 {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: 0.3s;
+  position: relative;
 }
 
 .figma-card img {
   width: 100%;
   height: 200px;
-  object-fit: fill;
+  object-fit: cover;
+  position: relative;
 }
 
 .figma-card p {
