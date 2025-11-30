@@ -428,3 +428,61 @@ nav h1 {
   .skill .progress-bar.animate {
     width: var(--width);
   }
+
+  /* figma Style */
+  .skills {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.figma-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.figma-card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.figma-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: fill;
+}
+
+.figma-card p {
+  padding: 10px;
+  font-weight: 600;
+}
+
+.figma-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+ 
+    .figma-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,255,20,0.1);
+      overflow: hidden;
+      position: relative;
+      transition: 0.3s;
+      
+      
+    }
+    .figma-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(31, 81, 255);
+    }
