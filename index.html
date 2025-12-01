@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <title>Ammar Khan - Portfolio</title>
 
@@ -255,16 +256,19 @@
     <div class="figma-card">
       <img src="./image//Figma/AMMAR DESING.png" alt="Figma Design 1">
       <p>Mobile App UI</p>
+      <button id="btn1">View Image</button>
     </div>
 
     <div class="figma-card">
       <img src="./image/Figma/Frame 16.jpg" alt="Figma Design 2">
       <p>Dashboard UI</p>
+      <button id="btn2">View Image</button>
     </div>
 
     <div class="figma-card">
       <img src="./image/Figma/Group 1.jpg" alt="Figma Design 3">
       <p>Website Landing Page</p>
+      <button id="btn3">View Image</button>
     </div>
   </div>
 </section>
@@ -299,8 +303,21 @@
 
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
+
   });
 </script>
+<script>
+   document.getElementById("btn1").addEventListener("click", function () {
+  window.open("./image//Figma/AMMAR DESING.png", "_blank");
+});
+   document.getElementById("btn2").addEventListener("click", function () {
+  window.open("./image/Figma/Frame 16.jpg", "_blank");
+});
+   document.getElementById("btn3").addEventListener("click", function () {
+  window.open("./image/Figma/Group 1.jpg", "_blank");
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 
